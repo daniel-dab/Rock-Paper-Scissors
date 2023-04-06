@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="greeting">
+        <h1>Rock Paper Scissors Game</h1>
+        <img src="./images/greetingImage.png" alt="Rock Paper Scissors" />
+        <p>Choose your nick:</p>
+        <input type="text" autocomplete="off" min="4" max="15" 
+        class="nicknameInput" spellcheck="false"/>
+        <input type="submit" value="Let's Play" class="submitNickname"/>
+      </div>
+      <div class="game invisible">
+        <p>Choose your weapon:</p>
+        <div class="game__weaponsList">
+          <div class="game__weaponsList--weapon">
+            <img src="./images/rock.png" alt="rock" />
+            Rock
+          </div>
+          <div class="game__weaponsList--weapon">
+            <img src="./images/paper.png" alt="paper" />
+            Paper
+          </div>
+          <div class="game__weaponsList--weapon">
+            <img src="./images/scissors.png" alt="scisssors" />
+            Scissors
+          </div>
+        </div>
+      </div>
+      <div class="result invisible"></div>
+    </div>
+  </body>
+</html>
